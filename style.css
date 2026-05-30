@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:Arial, sans-serif;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+}
+
+.logo{
+    width:320px;
+    max-width:80%;
+    margin-bottom:30px;
+
+    animation:float 4s ease-in-out infinite;
+}
+
+h1{
+    font-size:4rem;
+    letter-spacing:8px;
+
+    background:linear-gradient(
+        90deg,
+        #6d00ff,
+        #ff00aa
+    );
+
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+}
+
+.hero p{
+    margin-top:20px;
+    max-width:600px;
+    font-size:1.2rem;
+    opacity:.8;
+}
+
+.scroll{
+    margin-top:40px;
+    color:#b366ff;
+
+    animation:bounce 2s infinite;
+}
+
+.about{
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:40px;
+}
+
+.about h2{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.about p{
+    max-width:700px;
+    line-height:1.8;
+    opacity:.8;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+}
+
+@keyframes bounce{
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(10px);
+    }
+}
